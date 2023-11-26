@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fira+Sans:wght@600&family=Lumanosimo&family=Permanent+Marker&family=REM&family=Roboto&family=Roboto+Slab&family=Ysabeau+SC:wght@600;800;1000&display=swap');
+
+body{
+    font-family: 'Roboto Slab', serif;
+   
+    background: #98fb98;
+}
+
+h3{
+    color: red;
+    padding-top: 10px;
+    margin-left: 50px;
+    font-size: 1.5rem;
+}
+.box{
+    margin:0 auto;
+    height: auto;
+    max-width: 800px;
+    background-color: antiquewhite;
+    
+}
+.add_user{
+    background-color: grey;
+    height: 35px;
+    width: 100px;
+    margin-left: 5px;
+    float: right;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.add_user a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+table{
+    border: transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-collapse: collapse;
+}
+table td{
+    border: transparent;
+    padding: 15px;
+    border: transparent;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+table thead td{
+    font-weight: bold;
+    background-color: lightslategray;
+    color: white;
+
+}
+
+table tbody tr:nth-child(even){
+    background-color: rgb(229, 231, 233);
+}
+.edit,.delete{
+    text-decoration: none;
+}
+
+.edit{
+    background-color:blueviolet;
+    padding: 10px;
+    color:white ;
+    border-radius: 10px;
+}
+
+.delete{
+    background-color:red;
+    padding: 10px;
+    color:white ;
+    border-radius: 10px;
+}
+
+label,input{
+    margin-left: 60px;
+}
+label{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+input{
+    width: 300px;
+    height: 30px;
+}
+form{
+    margin-top: 50px;
+}
+button{
+    margin-left: 160px;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    border: transparent;
+    background-color: blue;
+    color: antiquewhite;
+    font-weight: bold;
+}
+.alert{
+    width: 100%;
+    height: 100px;
+    background-color: green;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}

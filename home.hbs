@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> joes crud</title>
+    </head>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <body>
+        
+       <div class="box">
+        <table>
+             <h3>Student Management system</h3>
+             <p class="add_user"><a href="/adduser">Add User</a></p>
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Name</td>
+                    <td>Age</td>
+                    <td>City</td>
+                    <td>Edit</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each rows}}
+                    <tr>
+                        <td>{{this.ID}}</td>
+                        <td>{{this.NAME}}</td>
+                        <td>{{this.AGE}}</td>
+                        <td>{{this.CITY}}</td>
+                        <td><a  class="edit" href="/edituser/{{this.ID}}">Edit</a></td>
+                        <td><a onclick="return confirm('are you sure ?')" class="delete" href="/deleteuser/{{this.ID}}">Delete</a></td>
+                    </tr>
+                {{/each}}
+
+                
+            </tbody>
+        </table>
+       </div>
+        
+    </body>
+</html>

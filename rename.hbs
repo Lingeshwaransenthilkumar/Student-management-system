@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> joes crud</title>
+    </head>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <body>
+        
+       <div class="box">
+             <h3>Edit New student</h3>
+             {{#if msg}}
+               <div class="alert">{{msg}}</div>
+             {{/if}}
+             {{#each rows}}
+             <form method="post" action="/edituser/{{this.ID}}" autocomplete="off">
+                 <label>Name</label><br>
+                 <input type="text" name="name" value="{{this.NAME}}"><br><br>
+                 <label>Age</label><br>
+                 <input type="text" name="age" value="{{this.AGE}}"><br><br>
+                 <label>City</label><br>
+                 <input type="text" name="city" value="{{this.CITY}}"><br><br><br>
+                 <button type="submit">Save details</button>
+                 <a href="/">View list</a>
+             </form>
+            {{/each}}  
+        
+    
+        </div>
+        
+    </body>
+</html>

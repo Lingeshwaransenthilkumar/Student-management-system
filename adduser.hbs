@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> joes crud</title>
+    </head>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <body>
+        
+       <div class="box">
+             <h3>Add New student</h3>
+             {{#if msg}}
+               <div class="alert">{{msg}}</div>
+             {{/if}}
+             <form method="post" action="/adduser">
+                 <label>Name</label><br>
+                 <input type="text" name="name"><br><br>
+                 <label>Age</label><br>
+                 <input type="text" name="age"><br><br>
+                 <label>City</label><br>
+                 <input type="text" name="city"><br><br><br>
+                 <button type="submit">Save details</button>
+                 <a href="/">View list</a>
+             </form>
+
+        
+    
+        </div>
+        
+    </body>
+</html>
